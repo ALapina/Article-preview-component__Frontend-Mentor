@@ -1,0 +1,43 @@
+.article-preview__share-panel {
+  background-color: $very-dark-grayish-blue;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.20);
+
+  visibility: hidden;
+  height: 0;
+
+  position: absolute;
+  top: 12.5rem;
+  right: -7%;
+  width: 30%;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 15px;
+
+
+  &::after {
+    content: '';
+    background: $very-dark-grayish-blue;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+  p {
+    color: $grayish-blue;
+    letter-spacing: 3px;
+  }
+}
+
+.show-panel {
+  visibility: visible;
+  transform: translateY(-45px);
+  height: 45px;
+}

@@ -1,0 +1,19 @@
+.article-preview__share-button {
+  position: absolute;
+  right: 9%;
+  bottom: 1.7rem;
+}
+
+.share-button {
+  background: $light-grayish-blue;
+  width: 32px;
+  height: 32px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+}
+
+.share-active {
+  background: $desaturated-dark-blue;
+  fill: white;
+}
